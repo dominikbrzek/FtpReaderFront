@@ -1,0 +1,17 @@
+<h2> Ftp configurations list</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th> Name</th>
+    <th> Scheduling enabled</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let ftpConfig of ftpConfigs">
+    <td>{{ftpConfig.name}}</td>
+    <td>{{ftpConfig.schedulingEnabled}}</td>
+  </tr>
+  </tbody>
+
+
+</table>
