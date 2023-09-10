@@ -4,12 +4,19 @@
   <tr>
     <th> Name</th>
     <th> Scheduling enabled</th>
+    <th> Actions</th>
   </tr>
   </thead>
   <tbody>
   <tr *ngFor="let ftpConfig of ftpConfigs">
     <td>{{ftpConfig.name}}</td>
     <td>{{ftpConfig.schedulingEnabled}}</td>
+    <td>
+      <button (click)="updateConfig(ftpConfig.id)" class="btn btn-info"> Update</button>
+    </td>
+    <td>
+      <button (click)="deleteConfig(ftpConfig.id)" class="btn btn-danger"> Delete</button>
+    </td>
   </tr>
   </tbody>
 

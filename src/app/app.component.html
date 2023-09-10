@@ -1,4 +1,21 @@
 <h1 class="text-center"> {{title}} </h1>
+
+<nav class=" navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="configs" routerLinkActive="active">Configs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="create-config" routerLinkActive="active">Create new config</a>
+    </li>
+  </ul>
+</nav>
+
 <div class="container">
-  <app-configs-list></app-configs-list>
+  <router-outlet></router-outlet>
 </div>
+<footer class="footer">
+  <div class="container">
+    <span>All rights reserved Domino 2023</span>
+  </div>
+</footer>

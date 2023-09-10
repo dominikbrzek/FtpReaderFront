@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { FtpConfigService } from './ftp-config.service';
+import {FtpConfigService} from './ftp-config.service';
 
 describe('FtpConfigService', () => {
   let service: FtpConfigService;

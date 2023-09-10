@@ -1,0 +1,40 @@
+<div class="col-md-8 offset-md-3">
+  <h3>Create new ftp configuration</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Server name</label>
+      <input [(ngModel)]=ftpConfig.name class="form-control" id="name" name="name" type="text">
+    </div>
+    <div class="form-group">
+      <label>Server address</label>
+      <input [(ngModel)]=ftpConfig.address class="form-control" id="address" name="address" type="text">
+    </div>
+    <div class="form-group">
+      <label>Server login</label>
+      <input [(ngModel)]=ftpConfig.login class="form-control" id="login" name="login" type="text">
+    </div>
+    <div class="form-group">
+      <label>Server password</label>
+      <input [(ngModel)]=ftpConfig.password class="form-control" id="password" name="password" type="text">
+    </div>
+    <div class="form-group">
+      <label>Server filePath</label>
+      <input [(ngModel)]=ftpConfig.filePath class="form-control" id="filePath" name="filePath" type="text">
+    </div>
+    <div class="form-group">
+      <label>Server port</label>
+      <input [(ngModel)]=ftpConfig.port class="form-control" id="port" name="port" type="number">
+    </div>
+    <div class="form-group">
+      <label>Server schedulingEnabled</label>
+      <input [(ngModel)]=ftpConfig.schedulingEnabled class="form-control" id="schedulingEnabled"
+             name="schedulingEnabled"
+             type="checkbox">
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+
+
+  </form>
+
+</div>
